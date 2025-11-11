@@ -143,13 +143,3 @@ Utilities for display in Tk
 - Offer a MediaPipe-based implementation for improved landmark detection with a graceful fallback to current heuristics.
 - Add an OpenCV-only bottom status panel for users without Tk/Pillow.
 
-
----
-
-If you'd like, I can now:
-- (A) Add a `requirements.txt` and `README.md` to the project (I recommend this),
-- (B) Create unit tests for the analyzer functions,
-- (C) Convert heuristics to MediaPipe and show a comparison,
-- (D) Remove `__pycache__` and/or examine `ENHANCEMENT (MAY REMOVE)` for cleanup.
-
-Tell me which next step you want and I will continue. 
