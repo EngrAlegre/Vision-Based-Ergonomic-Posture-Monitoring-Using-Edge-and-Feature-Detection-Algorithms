@@ -125,21 +125,3 @@ Constants & flags
 
 Utilities for display in Tk
 - Convert BGR → RGB then `PIL.Image.fromarray` and `ImageTk.PhotoImage` in `tk_gui.py`.
-
-
-## 6. Safety / edge cases & notes
-
-- Haar cascades are lightweight but less robust than landmark-based approaches (e.g., MediaPipe). Consider switching to MediaPipe Pose/Face if you need more accuracy.
-- Low lighting, occlusions, and unusual camera angles negatively affect Haar + contour heuristics.
-- CPU usage can be significant at full FPS; consider downsampling or skipping frames to reduce load.
-- `__pycache__` is safe to delete. Inspect `ENHANCEMENT (MAY REMOVE)` before deleting.
-
-
-## 7. Suggested next improvements (optional)
-
-- Add `requirements.txt` with pinned versions (`opencv-python`, `numpy`, `pillow`) — I can create it.
-- Add `README.md` with run instructions, dependency install commands, and troubleshooting steps — I can create it.
-- Add unit tests for deterministic parts (`calculate_angle`, scoring logic in `posture_analyzer`) — quick wins for reliability.
-- Offer a MediaPipe-based implementation for improved landmark detection with a graceful fallback to current heuristics.
-- Add an OpenCV-only bottom status panel for users without Tk/Pillow.
-
