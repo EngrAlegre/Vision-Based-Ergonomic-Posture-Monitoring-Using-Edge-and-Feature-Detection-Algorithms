@@ -1,0 +1,11 @@
+# Core dependencies for Vision-Based Ergonomic Posture Monitoring
+opencv-python>=4.7.0
+numpy>=1.23
+pillow>=9.0.0
+
+# Optional (improves landmark/keypoint detection; may have platform-specific wheel requirements)
+# mediapipe>=0.10.0
+
+# Notes:
+# - Pillow is required for the Tkinter GUI (ImageTk). If Pillow is missing, the app falls back to the OpenCV window.
+# - Mediapipe is optional. If you install it the project can be extended to use MediaPipe pose/face landmarks instead of the current heuristics.
